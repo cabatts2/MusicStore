@@ -109,12 +109,6 @@ public class Sale extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             if (instrumentList.getSelectedIndex() != -1) {
-
-                cart[i] = (String) instrumentList.getSelectedItem();
-                transact.setEnabled(true);
-                i++;
-                
-
                 if (LogScreen.stockPrep.checkSale(instrumentList.getSelectedIndex() + 1, amount[instrumentList.getSelectedIndex()] + 1)) {
                     amount[instrumentList.getSelectedIndex()]++;
                     cart[numE].name = (String) instrumentList.getSelectedItem();
