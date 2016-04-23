@@ -97,6 +97,7 @@ public class Sale extends JFrame {
                 cart[i] = (String) instrumentList.getSelectedItem();
                 transact.setEnabled(true);
                 i++;
+                
             }
         }
     }
