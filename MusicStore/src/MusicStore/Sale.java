@@ -101,12 +101,12 @@ public class Sale extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             if (instrumentList.getSelectedIndex() != -1) {
-<<<<<<< HEAD
+
                 cart[i] = (String) instrumentList.getSelectedItem();
                 transact.setEnabled(true);
                 i++;
                 
-=======
+
                 if (LogScreen.stockPrep.checkSale(instrumentList.getSelectedIndex() + 1, amount[instrumentList.getSelectedIndex()] + 1)) {
                     amount[instrumentList.getSelectedIndex()] ++;
                     cart[i] = (String) instrumentList.getSelectedItem();
@@ -116,7 +116,7 @@ public class Sale extends JFrame {
                 else {
                     JOptionPane.showMessageDialog(null, "We have no more of this item in stock.");
                 }
->>>>>>> zapple94/master
+
             }
         }
     }
