@@ -123,6 +123,7 @@ public class Order extends JFrame {
         }
     }
 
+    }
     private class transactButtonHandler implements ActionListener {
 
         @Override
